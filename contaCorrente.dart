@@ -13,10 +13,12 @@ class ContaCorrente {
   }
 
   get saldo => _saldo;
-  set saldo(double valor) {
-    if(valor < 0) { return; }
-    this._saldo = valor;
-  }
+  
+  // O setter abaixo não é uma boa prática da OO 
+  // set saldo(double valor) {
+  //   if(valor < 0) { return; }
+  //   this._saldo = valor;
+  // }
 
   bool sacar(double valor) {
     if(_saldo < valor) {

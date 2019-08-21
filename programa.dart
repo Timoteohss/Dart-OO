@@ -10,5 +10,10 @@ void main() {
 
     ContaCorrente contaDaGabriela = ContaCorrente(867, 87432);
     print(contaDaGabriela.totalDeContasCriadas);
+
+    conta.titular = Cliente("12345","Timóteo");
+    contaDaGabriela.titular = Cliente("12346", "Gabriela");
+
+    print(conta.titular.nome);
     
 }

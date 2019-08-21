@@ -1,11 +1,10 @@
 class Cliente {
-  String _cpf;
-  String nome;
+  final String _cpf;
+  final String _nome;
   String profissao;
 
   String get cpf => _cpf;
-  set cpf(String c) {
-    this._cpf = c;
-  }
+  String get nome => _nome;
 
+  Cliente(this._cpf, this._nome);
 }
