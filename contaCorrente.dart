@@ -3,12 +3,15 @@ class ContaCorrente {
   Cliente titular;
   int agencia;
   int numero;
-  double _saldo = 100;
+  double _saldo = 0;
   int totalDeContasCriadas = 0;
 
-  ContaCorrente(int agencia, int numero) {
+  ContaCorrente(int agencia, int numero, Cliente titular, {double saldo}) {
     this.agencia = agencia;
     this.numero = numero;
+    this.titular = titular;
+    this._saldo = saldo;
+    
     totalDeContasCriadas++;
   }
 

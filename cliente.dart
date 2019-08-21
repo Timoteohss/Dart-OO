@@ -6,5 +6,7 @@ class Cliente {
   String get cpf => _cpf;
   String get nome => _nome;
 
-  Cliente(this._cpf, this._nome);
+  Cliente(this._cpf, this._nome) {
+    print("Conta de ${this._nome} aberta!");
+  }
 }
